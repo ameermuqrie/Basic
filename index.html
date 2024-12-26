@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Basic Bootstrap 4 Page</title>
+    <title>Bootstrap Example</title>
     <!-- Corrected link tags -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,20 +31,22 @@
     <div class="jumbotron text-center">
         <h1>Welcome to My Website</h1>
         <p>Professional IT consulting services</p>
+        <!-- Responsive Image -->
+        <img src="https://via.placeholder.com/800x400" class="img-fluid" alt="Responsive Image">
     </div>
 
     <!-- Responsive Container -->
     <div class="container">
         <!-- About Section -->
         <section id="about">
-            <h2>About Us</h2>
+            <h2 class="display-4">About Us</h2>
             <p>We are a startup dedicated to providing innovative IT consulting solutions to businesses worldwide.</p>
         </section>
     
         <!-- Services Section -->
         <section id="services">
-            <h2>Our Services</h2>
-            <ul>
+            <h2 class="display-4">Our Services</h2>
+            <ul class="list-unstyled">
                 <li>IT Strategy and Planning</li>
                 <li>Cloud Computing</li>
                 <li>Cybersecurity Consulting</li>
@@ -54,7 +56,7 @@
     
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Us</h2>
+            <h2 class="display-4">Contact Us</h2>
             <form>
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -67,6 +69,68 @@
                 <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <!-- Form Examples -->
+        <section id="form-examples">
+            <h2 class="display-4 mt-5">Example Forms</h2>
+            <!-- Basic Form -->
+            <h3>Basic Form</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <!-- Horizontal Form -->
+            <h3 class="mt-5">Horizontal Form</h3>
+            <form>
+                <div class="row mb-3">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <!-- Checkbox Form -->
+            <h3 class="mt-5">Checkbox Form</h3>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="exampleCheck">
+                    <label class="form-check-label" for="exampleCheck">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+
+            <!-- Form Validation -->
+            <h3 class="mt-5">Form Validation</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="validationExample" class="form-label">Username</label>
+                    <input type="text" class="form-control is-valid" id="validationExample" value="Correct Input">
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="validationExampleInvalid" class="form-label">Password</label>
+                    <input type="password" class="form-control is-invalid" id="validationExampleInvalid">
+                    <div class="invalid-feedback">Please choose a stronger password.</div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
